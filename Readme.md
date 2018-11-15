@@ -1,3 +1,15 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Customer.cs](./CS/MyXtraGrid/Customer.cs) (VB: [Customer.vb](./VB/MyXtraGrid/Customer.vb))
+* [Form1.cs](./CS/MyXtraGrid/Form1.cs) (VB: [Form1.Designer.vb](./VB/MyXtraGrid/Form1.Designer.vb))
+* **[MyGridControl.cs](./CS/MyXtraGrid/MyGridControl.cs) (VB: [MyGridControl.vb](./VB/MyXtraGrid/MyGridControl.vb))**
+* [MyGridHandler.cs](./CS/MyXtraGrid/MyGridHandler.cs) (VB: [MyGridHandler.vb](./VB/MyXtraGrid/MyGridHandler.vb))
+* [MyGridRegistration.cs](./CS/MyXtraGrid/MyGridRegistration.cs) (VB: [MyGridRegistration.vb](./VB/MyXtraGrid/MyGridRegistration.vb))
+* [MyGridView.cs](./CS/MyXtraGrid/MyGridView.cs) (VB: [MyGridViewInfo.vb](./VB/MyXtraGrid/MyGridViewInfo.vb))
+* [MyGridViewInfo.cs](./CS/MyXtraGrid/MyGridViewInfo.cs) (VB: [MyGridViewInfo.vb](./VB/MyXtraGrid/MyGridViewInfo.vb))
+* [Program.cs](./CS/MyXtraGrid/Program.cs) (VB: [Program.vb](./VB/MyXtraGrid/Program.vb))
+<!-- default file list end -->
 # How to create a GridView descendant class and register it for design-time use
 
 
