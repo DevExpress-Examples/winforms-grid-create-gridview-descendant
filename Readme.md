@@ -15,6 +15,10 @@
 
 <p><strong>Starting with v16.1</strong>, you can create a custom GridView with all the required classes using our <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument16492">Template Gallery</a>. Use the "<em>Custom Data Grid</em>" template.<br><br><br>This is an example of a custom GridView and a custom control that inherits the DevExpress.XtraGrid.GridControl. Make sure to build the project prior to opening Form1 in the designer. Please refer to the <a href="https://www.devexpress.com/Support/Center/p/A859">How to create a GridView descendant class and register it for design-time use</a> Knowledge Base article for the additional information.<br>In addition, you can refer to the examples describing how to create GridControl's View descendants:<br>1. <a href="https://www.devexpress.com/Support/Center/p/T122347">How to create a WinExplorerView descendant class and register it for design-time use</a>; <br>2. <a href="https://www.devexpress.com/Support/Center/p/T122335">How to create a LayoutView descendant class and register it for design-time use</a>; <br>3. <a href="https://www.devexpress.com/Support/Center/p/T122333">How to create a CardView descendant class and register it for design-time use</a>; <br>4. <a href="https://www.devexpress.com/Support/Center/p/T122322">How to create a AdvBandedGridView descendant class and register it for design-time use</a> ;<br>5. <a href="https://www.devexpress.com/Support/Center/p/T122275">How to create a BandedGridView descendant class and register it for design-time use</a><u>;</u> <br>6. <a href="https://www.devexpress.com/Support/Center/p/T233168">How to create a TileView descendant class and register it for design-time use</a>.</p>
 
+<b>See also:</b>
+
+[DevExpress WinForms Troubleshooting - Grid Control](https://go.devexpress.com/CheatSheets_WinForms_Examples_T934742.aspx)
+
 <br/>
 
 
