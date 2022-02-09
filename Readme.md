@@ -10,7 +10,7 @@ In v16.1 and higher, you can use the [Template Gallery](https://docs.devexpress.
 
 The current example shows how to create a GridView descendant without using this template. This descendant allows users to delete records when they press the `Delete` keyboard key. Build the project prior to opening the `Form1` form in Visual Studio's designer. 
   
-The following article contains more information on a Grid Control's descendants: [Create GridView descendants](https://www.devexpress.com/Support/Center/p/A859)
+See the following article for more information: [Create GridView descendants](https://www.devexpress.com/Support/Center/p/A859)
 
 
 <!-- default file list -->
