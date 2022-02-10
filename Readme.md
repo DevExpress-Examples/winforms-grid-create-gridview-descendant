@@ -32,7 +32,7 @@ See the following article for more information: [Create GridView descendants](ht
 - [How to create a WinExplorerView descendant class and register it for design-time use](https://www.devexpress.com/Support/Center/p/T122347)
 - [How to create a LayoutView descendant class and register it for design-time use](https://www.devexpress.com/Support/Center/p/T122335)
 - [How to create a CardView descendant class and register it for design-time use](https://www.devexpress.com/Support/Center/p/T122333)
-- [How to create a AdvBandedGridView descendant class and register it for design-time use](https://www.devexpress.com/Support/Center/p/T122322)
+- [How to create an AdvBandedGridView descendant class and register it for design-time use](https://www.devexpress.com/Support/Center/p/T122322)
 - [How to create a BandedGridView descendant class and register it for design-time use](https://www.devexpress.com/Support/Center/p/T122275)
 - [How to create a TileView descendant class and register it for design-time use](https://www.devexpress.com/Support/Center/p/T233168)
 
