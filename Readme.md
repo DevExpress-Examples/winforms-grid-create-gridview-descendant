@@ -27,7 +27,7 @@ Override the `ViewName` property for the `GridView` descendant. This property sh
 Do the following to register the `GridView` descendant for design-time use:
 
 - Create a `GridInfoRegistrator` class descendant. This class's `ViewName` property must return the same value as your View's `ViewName` property.
-- Inherit the `GridControl` class and override the `RegisterAvailableViewsCore` method.
+- Override the `RegisterAvailableViewsCore` method in your `GridControl` descendant.
 - If you want the `GridControl` to create an instance of your `GridView` descendant when you create a `GridControl`, override the `GridControl.CreateDefaultView` method.
 - To display the custom `GridControl` on the Visual Studio Toolbox, mark the control with the `[ToolboxItem(true)]` attribute and rebuild the solution.
 
