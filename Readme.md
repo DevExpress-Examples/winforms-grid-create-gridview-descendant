@@ -24,7 +24,7 @@ You typically need to create descendants of the following classes to implement c
 
 Override the `ViewName` property for the `GridView` descendant. This property should return a unique View name.
 
-Do the following to register the GridView descendant for design-time use:
+Do the following to register the `GridView` descendant for design-time use:
 
 - Create a `GridInfoRegistrator` class descendant. This class's `ViewName` property must return the same value as your View's `ViewName` property.
 - Inherit the `GridControl` class and override the `RegisterAvailableViewsCore` method.
