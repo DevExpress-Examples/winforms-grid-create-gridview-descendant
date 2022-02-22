@@ -15,21 +15,21 @@ This section describes basic concepts to create a descendant of the GridView, de
 
 You typically need to create descendants of the following classes to implement custom functionality for a GridView:
 
-- GridView
-- GridControl
-- GridInfoRegistrator - Contains the View's registration information.
-- GridHandler - Processes mouse and keyboard actions.
-- GridViewInfo - Calculates display information used to draw the View's elements.
-- GridViewPrintInfo - Calculates the information necessary to print the View.
+- `GridView`
+- `GridControl`
+- `GridInfoRegistrator` - Contains the View's registration information.
+- `GridHandler` - Processes mouse and keyboard actions.
+- `GridViewInfo` - Calculates display information used to draw the View's elements.
+- `GridViewPrintInfo` - Calculates the information necessary to print the View.
 
-Override the ViewName property for the GridView descendant. This property should return a unique View name.
+Override the `ViewName` property for the GridView descendant. This property should return a unique View name.
 
 Do the following to register the GridView descendant for design-time use:
 
-- Create a GridInfoRegistrator class descendant. This class's ViewName property must return the same value as your View's ViewName property.
-- Inherit the GridControl class and override the RegisterAvailableViewsCore method.
-- If you want the GridControl to create an instance of your GridView descendant when you create a GridControl, override the GridControl.CreateDefaultView method.
-- To display the custom GridControl on the Visual Studio Toolbox, mark the control with the [ToolboxItem(true)] attribute and rebuild the solution.
+- Create a `GridInfoRegistrator` class descendant. This class's `ViewName` property must return the same value as your View's `ViewName` property.
+- Inherit the `GridControl` class and override the `RegisterAvailableViewsCore` method.
+- If you want the `GridControl` to create an instance of your `GridView` descendant when you create a `GridControl`, override the `GridControl.CreateDefaultView` method.
+- To display the custom `GridControl` on the Visual Studio Toolbox, mark the control with the `[ToolboxItem(true)]` attribute and rebuild the solution.
 
 
 <!-- default file list -->
