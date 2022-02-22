@@ -22,7 +22,7 @@ You typically need to create descendants of the following classes to implement c
 - `GridViewInfo` - Calculates display information used to draw the View's elements.
 - `GridViewPrintInfo` - Calculates the information necessary to print the View.
 
-Override the `ViewName` property for the GridView descendant. This property should return a unique View name.
+Override the `ViewName` property for the `GridView` descendant. This property should return a unique View name.
 
 Do the following to register the GridView descendant for design-time use:
 
