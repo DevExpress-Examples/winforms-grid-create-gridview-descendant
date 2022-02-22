@@ -8,10 +8,10 @@
 
 In v16.1 and higher, you can use the [Template Gallery](https://docs.devexpress.com/WindowsForms/16492/whats-installed/template-gallery) to create a [GridView](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView) descendant with all required infrastructure classes. Use the `Custom Data Grid` template for this purpose.
 
-The current example shows how to create a GridView descendant without using this template. This descendant allows users to delete records when they press the `Delete` key. Build the project prior to opening the `Form1` form in the Visual Studio designer. 
+The current example shows how to create a `GridView` descendant without using this template. This descendant allows users to delete records when they press the `Delete` key. Build the project prior to opening the `Form1` form in the Visual Studio designer. 
 
 ## View Descendant Concepts
-This section describes basic concepts to create a descendant of the GridView, demonstrated in the attached project.
+This section describes basic concepts to create a descendant of the `GridView`, demonstrated in the attached project.
 
 You typically need to create descendants of the following classes to implement custom functionality for a GridView:
 
