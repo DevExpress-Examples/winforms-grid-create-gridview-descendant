@@ -15,7 +15,7 @@ This section describes basic concepts to create a descendant of the `GridView`, 
 
 You typically need to create descendants of the following classes to implement custom functionality for a `GridView`:
 
-- `GridView` - The component that exposes customization settings. References all infrastructure classes.
+- `GridView` - The component that exposes customization settings and references all infrastructure classes.
 - `GridControl` - The control that you place on the form. This is a container for your View descendant.
 - `GridInfoRegistrator` - Contains the View's registration information.
 - `GridHandler` - Processes mouse and keyboard actions.
