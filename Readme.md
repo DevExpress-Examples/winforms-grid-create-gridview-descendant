@@ -4,36 +4,30 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Data Grid for Windows Forms - How to create a GridView descendant and register it for design-time use
+# WinForms Data Grid - How to create a GridView descendant and use it at design-time
 
-In v16.1 and higher, you can use the [Template Gallery](https://docs.devexpress.com/WindowsForms/16492/whats-installed/template-gallery) to create a [GridView](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView) descendant with all required infrastructure classes. Use the `Custom Data Grid` template for this purpose.
+In v16.1+, you can use the `Custom Data Grid` template shipped as part of the [DevExpress Template Gallery](https://docs.devexpress.com/WindowsForms/16492/whats-installed/template-gallery) to create a [GridView](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView) descendant with pre-built infrastructure classes.
 
-The current example shows how to create a `GridView` descendant without using this template. This descendant allows users to delete records when they press the `Delete` key. Build the project prior to opening the `Form1` form in the Visual Studio designer. 
+This example demonstrates how to create a custom view (`GridView` descendant) from scratch. The descendant View allows users to delete records by pressing the `Delete` key. Open the solution and build the project before opening `Form1` in the Visual Studio designer.
 
-## View Descendant Concepts
-This section describes basic concepts to create a descendant of the `GridView`, demonstrated in the attached project.
+## How it Works - Descendant View Concept
 
-You typically need to create descendants of the following classes to implement custom functionality for a `GridView`:
-
-- `GridView` - The component that exposes customization settings and references all infrastructure classes.
-- `GridControl` - The control that you place on the form. This is a container for your View descendant.
-- `GridInfoRegistrator` - Contains the View's registration information.
-- `GridHandler` - Processes mouse and keyboard actions.
-- `GridViewInfo` - Calculates display information used to draw the View's elements.
-- `GridViewPrintInfo` - Calculates the information necessary to print the View.
-
-Override the `ViewName` property for the `GridView` descendant. This property should return a unique View name.
-
-Do the following to register the `GridView` descendant for design-time use:
-
-- Create a `GridInfoRegistrator` class descendant. This class's `ViewName` property must return the same value as your View's `ViewName` property.
-- Override the `RegisterAvailableViewsCore` method in your `GridControl` descendant.
-- If you want the custom `GridControl` to create an instance of the `GridView` descendant on the control's initialization, override the `GridControl.CreateDefaultView` method.
-- To display the custom `GridControl` in the Visual Studio Toolbox, mark the control with the `[ToolboxItem(true)]` attribute and rebuild the solution.
-
+1. Create descendants of the following classes and implement custom functionality:
+    * `GridView` - The component that exposes customization settings and references all infrastructure classes.
+    * `GridControl` - The UI control that you place on the form. This is a container for the View.
+    * `GridInfoRegistrator` - Contains the View's registration information.
+    * `GridHandler` - Processes mouse and keyboard actions.
+    * `GridViewInfo` - Calculates display information used to draw View elements.
+    * `GridViewPrintInfo` - Calculates the information required to print the View.
+2. Override the `ViewName` property for the `GridView` descendant. This property should return a unique View name.
+3. Register the `GridView` descendant for design-time use:
+    * Create a `GridInfoRegistrator` class descendant. Its `ViewName` property must return the same value as your View's `ViewName` property.
+    * Override the `RegisterAvailableViewsCore` method in your `GridControl` descendant.
+    * If you want the custom `GridControl` to create an instance of the `GridView` descendant on the grid's initialization, override the `GridControl.CreateDefaultView` method.
+    * Mark your grid control with the `[ToolboxItem(true)]` attribute and rebuild the solution to display the custom `GridControl` in the Visual Studio Toolbox.
 
 <!-- default file list -->
-## Files to Look At
+## Files to Review
 
 * [Customer.cs](./CS/MyXtraGrid/Customer.cs) (VB: [Customer.vb](./VB/MyXtraGrid/Customer.vb))
 * [Form1.cs](./CS/MyXtraGrid/Form1.cs) (VB: [Form1.vb](./VB/MyXtraGrid/Form1.vb))
