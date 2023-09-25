@@ -4,11 +4,11 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WinForms Data Grid - How to create a GridView descendant and use it at design-time
+# WinForms Data Grid - How to create a GridView descendant and use it at design time
 
 In v16.1+, you can use the `Custom Data Grid` template shipped as part of the [DevExpress Template Gallery](https://docs.devexpress.com/WindowsForms/16492/whats-installed/template-gallery) to create a [GridView](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView) descendant with pre-built infrastructure classes.
 
-This example demonstrates how to create a custom view (`GridView` descendant) from scratch. The descendant View allows users to delete records by pressing the `Delete` key. Open the solution and build the project before opening `Form1` in the Visual Studio designer.
+This example demonstrates how to create a custom view (a `GridView` descendant) from scratch. The descendant View allows users to delete records by pressing the `Delete` key. Open the solution and build the project before opening `Form1` in the Visual Studio designer.
 
 ## How it Works - Descendant View Concept
 
