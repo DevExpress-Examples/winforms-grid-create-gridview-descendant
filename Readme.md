@@ -25,7 +25,9 @@ This example demonstrates how to create a custom view (a `GridView` descendant) 
     * Create a `GridInfoRegistrator` class descendant. Its `ViewName` property must return the same value as your View's `ViewName` property.
     * Override the `RegisterAvailableViewsCore` method in your `GridControl` descendant.
     * If you want the custom `GridControl` to create an instance of the `GridView` descendant on the grid's initialization, override the `GridControl.CreateDefaultView` method.
-    * Mark your grid control with the `[ToolboxItem(true)]` attribute and rebuild the solution to display the custom `GridControl` in the Visual Studio Toolbox.
+    * Mark your grid control with the `[ToolboxItem(true)]` attribute.
+4. Rebuild the solution to display the `MyGridControl` in the Visual Studio Toolbox.
+5. Locate MyGridControl` in the Visual Studio Toolbox, drag and drop it on a Form.
 
 <!-- default file list -->
 ## Files to Review
